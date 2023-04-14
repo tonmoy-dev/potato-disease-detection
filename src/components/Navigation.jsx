@@ -1,4 +1,4 @@
-import * as React from "react";
+import { useState } from "react";
 import PropTypes from "prop-types";
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
@@ -17,9 +17,9 @@ import Button from "@mui/material/Button";
 const drawerWidth = 240;
 const navItems = ["Home", "About"];
 
-function NavigationBar(props) {
+function Navigation(props) {
   const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = useState(false);
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
@@ -117,7 +117,7 @@ function NavigationBar(props) {
   );
 }
 
-NavigationBar.propTypes = {
+Navigation.propTypes = {
   /**
    * Injected by the documentation to work in an iframe.
    * You won't need it on your project.
@@ -125,4 +125,4 @@ NavigationBar.propTypes = {
   window: PropTypes.func,
 };
 
-export default NavigationBar;
+export default Navigation;

@@ -1,10 +1,13 @@
-import Navigation from "../components/Navigation";
+import MainLayout from "../layouts/MainLayout";
+import MainContent from "../components/MainContent";
 
 function Home() {
   return (
-    <div className="App">
-      <Navigation />
-    </div>
+    <MainLayout>
+      <div className="wrapper">
+        <MainContent />
+      </div>
+    </MainLayout>
   );
 }
 
