@@ -48,7 +48,7 @@ function Navigation(props) {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav" color="success">
+      <AppBar component="nav" color="transparent" sx={{color:"white"}} className="nav-wrapper">
         <Toolbar>
           <IconButton
             color="inherit"

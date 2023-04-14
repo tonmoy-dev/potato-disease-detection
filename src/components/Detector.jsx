@@ -10,7 +10,7 @@ import { MdFavorite, MdShare, MdExpandMore, MdMoreVert } from "react-icons/md";
 
 export default function Detector() {
   return (
-    <Card sx={{ maxWidth: "auto" }}>
+    <Card sx={{ maxWidth: "auto", padding: "16px" }}>
       <CardHeader
         sx={{ textAlign: "center" }}
         title="Potato Disease Detection"
@@ -19,6 +19,7 @@ export default function Detector() {
       <CardMedia component="img" height="194" image="" alt="Potato Image" />
       <CardContent>
         <Button
+		  color="warning"
           variant="contained"
           size="small"
           sx={{ textTransform: "capitalize", margin: "16px 0" }}
